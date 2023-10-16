@@ -1,4 +1,7 @@
-
+let options = {
+    width: 850,
+    height: 400
+};
 
 // Ejercicio 1.
 // Titulos = results[i].title
@@ -17,14 +20,6 @@ function flims() {
                 data["labels"].push(f['title']);
                 data["series"][0].push(String(f["release_date"].split("-")[0]));//solo el year
             }
-
-            console.log(data)
-            
-            var options = {
-                width: 850,
-                height: 400
-            };
-
             
             new Chartist.Line('#chart1', data, options); 
 
@@ -48,16 +43,8 @@ function characters() {
                 data["labels"].push(f['name']);
                 data["series"][0].push(f['films'].length);
             }
-
-            console.log(data)
-            
-            var options = {
-                width: 850,
-                height: 400
-            };
-
-            
-            new Chartist.Line('#chart2', data, options); 
+           
+            new Chartist.Bar('#chart2', data, options); 
 
         })
    
