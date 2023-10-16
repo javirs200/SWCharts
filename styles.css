@@ -34,7 +34,7 @@ article {
 .ct-series-a .ct-point {
   /* Colour of your points */
   /* Agregar color: rompe todo */
-  stroke: blue;
+  stroke: cyan;
   /* Size of your points */
   stroke-width: 20px;
   /* Make your points appear as squares */
